@@ -24,7 +24,6 @@ const DashboardPage: React.FC<DashboardPageProps> = ({ user, onStartQuiz }) => {
   const [viewingAnswers, setViewingAnswers] = useState<Certificate | null>(null); // Added State
   const [activeTab, setActiveTab] = useState<'certificates' | 'answerKeys'>('certificates');
   
-  // Quiz Generation State
   const [videoUrl, setVideoUrl] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
   const [genError, setGenError] = useState('');
